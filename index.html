@@ -70,9 +70,52 @@
         
 
         <table style="width:100%;border:0px;border-spacing:0px;table-layout:fixed;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+                <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+                  <img src="resources/thumbnail_shot-by-shot.png" alt="b3do" width="200" height="150" style="border-style: none">
+                </td>
+                <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2504.01020">
+                    <papertitle>Shot-by-Shot: Film-Grammar-Aware Training-Free Audio Description Generation</papertitle>
+                  </a>
+                  <br>
+                  <strong> Junyu Xie </strong>,
+                  <a href='https://tengdahan.github.io/'> Tengda Han</a>,
+                  <a href='https://maxbain.com/'> Max Bain</a>,
+                  <a href='https://a-nagrani.github.io/'> Arsha Nagrani</a>,
+                  <a href='https://esh04.github.io/'> Eshika Khandelwal</a>,
+                  <!-- <br> -->
+                  <a href='https://imagine.enpc.fr/~varolg/'> G&uuml;l Varol</a>,
+                  <a href="https://weidixie.github.io/"> Weidi Xie</a>,
+                  <a href="https://www.robots.ox.ac.uk/~az/"> Andrew Zisserman</a>
+      
+                  <br>
+                  <em>Arxiv, 2025</em> &nbsp <font color="red"></font></font>
+                  <br>
+                  <a href='https://arxiv.org/abs/2504.01020'>ArXiv</a> /
+                  <a href="javascript:;" onclick="show_hide('BibXie25')"> Bibtex </a> /
+                  <a href="https://www.robots.ox.ac.uk/~vgg/research/shot-by-shot/"> Project page</a>  /
+                  <a href='https://github.com/Jyxarthur/shot-by-shot/'>Code</a> /
+                  <a href='https://www.robots.ox.ac.uk/~vgg/research/shot-by-shot/#action_score'>Metric (Action Score)</a>
+      
+                  <div style="display: none;" class="BibtexExpand" id="BibXie25">
+                  <div style="width:500px;overflow:visible;">
+                  <pre class="bibtex" style="font-size:12px">
+@article{xie2025shotbyshot,
+  title={Shot-by-Shot: Film-Grammar-Aware Training-Free Audio Description Generation},
+  author={Junyu Xie and Tengda Han and Max Bain and Arsha Nagrani and Eshika Khandelwal and G\"ul Varol and Weidi Xie and Andrew Zisserman},
+  journal={arXiv preprint arXiv:2504.01020},
+  year={2025}
+}
+                  </pre>
+                  </div>
+                  </div>
+                  <p style="margin-top: 5px;">In this work, we introduce an enhanced two-stage training-free framework for Audio Description (AD) generation. We consider "shot" as the fundamental unit in movie and TV series, incorporating shot-based temporal context and film grammar information into VideoLLM perception. Additionally, we formulate a new metric (Action Score) that assesses whether the predicted ADs captures the correct action information.</p>
+                </td>
+            </tr>
 
         <tr>
-          <td style="padding:20px;width:25%;vertical-align:middle">
+          <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
             <img src="resources/thumbnail_autoad0.png" alt="b3do" width="200" height="150" style="border-style: none">
           </td>
           <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
@@ -100,16 +143,15 @@
             <div style="display: none;" class="BibtexExpand" id="BibXie24b">
             <div style="width:500px;overflow:visible;">
             <pre class="bibtex" style="font-size:12px">
-@article{xie2024autoad0,
+@InProceedings{xie2024autoad0,
   title={AutoAD-Zero: A Training-Free Framework for Zero-Shot Audio Description},
   author={Junyu Xie and Tengda Han and Max Bain and Arsha Nagrani and G\"ul Varol and Weidi Xie and Andrew Zisserman},
-  journal={arXiv preprint arXiv:2407.15850},
+  booktitle={ACCV},
   year={2024}
 }
             </pre>
             </div>
             </div>
-
             <p style="margin-top: 5px;">In this paper, we propose AutoAD-Zero, which is a training-free framework aiming at zero-shot Audio Description (AD) generation for movies and TV series. The overall framework feature two stages (dense description + AD summary), with the character information injected by visual-textual prompting.</p>
           </td>
       </tr>
@@ -139,10 +181,10 @@
             <div style="display: none;" class="BibtexExpand" id="BibXie24a">
             <div style="width:500px;overflow:visible;">
             <pre class="bibtex" style="font-size:12px">
-@article{xie2024flowsam,
+@InProceedings{xie2024flowsam,
   title={Moving Object Segmentation: All You Need Is SAM (and Flow)},
   author={Junyu Xie and Charig Yang and Weidi Xie and Andrew Zisserman},
-  journal={arXiv preprint arXiv:2404.12389},
+  booktitle={ACCV},
   year={2024}
 }
             </pre>
@@ -155,7 +197,7 @@
       </tr>
 
       <tr>
-        <td style="padding:20px;width:25%;vertical-align:middle">
+        <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
           <img src="resources/thumbnail_abr.png" alt="b3do" width="200" height="150" style="border-style: none">
         </td>
         <td style="padding:15px 30px;width:75%;vertical-align:middle">
@@ -231,7 +273,7 @@
 
 
           <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle">
+            <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
               <img src="resources/thumbnail_oclr.png" alt="b3do" width="200" height="150" style="border-style: none">
             </td>
             <td style="padding:15px 30px;width:75%;vertical-align:middle">
