@@ -1,71 +1,81 @@
-<!DOCTYPE HTML>
-<script src="http://www.google.com/jsapi" type="text/javascript"></script> 
-<script type="text/javascript">google.load("jquery", "1.3.2");</script>
-<script type="text/javascript">
-  function show_hide(eid) {
-    var x = document.getElementById(eid);
-    if (x.style.display === "none") {
-      x.style.display = "block";
-    } else {
-      x.style.display = "none";
-    }
-    }
-</script>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Junyu Xie</title>
-  
-  <meta name="author" content="Junyu Xie">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
-  <link rel="stylesheet" type="text/css" href="stylesheet.css">
-  	<link rel="icon" href="images/icon_small.png" type="image/png">
+  <title>Junyu Xie</title>
+  <meta name="author" content="Junyu Xie">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="images/icon_small.png" type="image/png">
 
-<!--	<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🌐</text></svg>">-->
+  <style>
+    @media (max-width: 768px) {
+      td {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+      }
+      img {
+        width: 100% !important;
+        height: auto !important;
+      }
+      .bibtex {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    }
+    name {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    heading {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function show_hide(eid) {
+      const x = document.getElementById(eid);
+      x.style.display = (x.style.display === "none" || x.style.display === "") ? "block" : "none";
+    }
+  </script>
 </head>
 
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
+  <table style="width:100%;max-width:800px;margin:auto;border:0;border-spacing:0;border-collapse:separate;">
+    <tr>
+      <td>
+        <table style="width:100%;border:0;border-spacing:0;margin:auto;">
+          <tr>
             <td style="padding:2.5%;width:70%;vertical-align:middle">
-            <!-- <td style="padding:2.5%;width:63%;vertical-align:middle"> -->
-              <p style="margin-bottom: 20px;text-align:center">
+              <p style="text-align:center; margin-bottom: 20px;">
                 <name>Junyu Xie</name>
               </p>
-              <p>I am currently a fourth-year DPhil student at <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group (VGG)</a>, <a href="https://www.ox.ac.uk/">University of Oxford</a>, advised by <a href="https://www.robots.ox.ac.uk/~az/">Prof. Andrew Zisserman</a> and <a href="https://weidixie.github.io/">Prof. Weidi Xie</a>.
-              </p>
-              <p>
-                Prior to that, I completed my undergraduate studies at <a href="https://www.cam.ac.uk/">University of Cambridge</a> and received MSc and BA degrees in Natural Sciences (Physics), during which I did summer interns on machine learning and physics at <a href="https://photonics.caltech.edu/">Caltech</a>,  <a href="https://phys.fudan.edu.cn/">Fudan University</a>, and <a href="https://www.me.phy.cam.ac.uk/">University of Cambridge</a>.
-              </p>
-              
+              <p>I am currently a fourth-year DPhil student at <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group (VGG)</a>, <a href="https://www.ox.ac.uk/">University of Oxford</a>, advised by <a href="https://www.robots.ox.ac.uk/~az/">Prof. Andrew Zisserman</a> and <a href="https://weidixie.github.io/">Prof. Weidi Xie</a>.</p>
+              <p>Prior to that, I completed my undergraduate studies at <a href="https://www.cam.ac.uk/">University of Cambridge</a> and received MSc and BA degrees in Natural Sciences (Physics), during which I did summer interns on machine learning and physics at <a href="https://photonics.caltech.edu/">Caltech</a>, <a href="https://phys.fudan.edu.cn/">Fudan University</a>, and <a href="https://www.me.phy.cam.ac.uk/">University of Cambridge</a>.</p>
               <p style="text-align:center">
-                <a href="mailto:jyx@robots.ox.ac.uk">Email</a> &nbsp/&nbsp
-                <a href="https://scholar.google.com/citations?user=cDMqaTYAAAAJ&hl=en">Google Scholar</a> &nbsp/&nbsp
+                <a href="mailto:jyx@robots.ox.ac.uk">Email</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=cDMqaTYAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
                 <a href="https://github.com/jyxarthur">Github</a>
               </p>
             </td>
-            <td style="padding:3%;width:30%;max-width:40%;vertical-align:middle">
-              <a href="resources/profile_image.jpg"><img style="width:100%;max-width:100%" alt="profile photo" src="resources/profile_image.jpg" class="hoverZoomLink"></a>
+            <td style="padding:3%;width:30%;max-width:40%;vertical-align:middle;text-align:center">
+              <a href="resources/profile_image.jpg">
+                <img src="resources/profile_image.jpg" alt="profile photo" style="max-width:100%;height:auto;">
+              </a>
             </td>
-          </tr> 
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-            <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-            <heading>Research</heading>
-            <p>
-                My research focuses on <i>long-form video understanding</i>, <i>object-centric learning</i>, and <i>motion segmentation</i>. I am also interested in representation learning, image and video generation, and multimodal language model.
-            </p>
-            </td>
-            <p>
-                
           </tr>
-          
-        </tbody></table>
+        </table>
+
+        <table style="width:100%;margin:auto;border:0;border-spacing:0;">
+          <tr>
+            <td style="padding:20px;vertical-align:middle">
+              <heading>Research</heading>
+              <p>My research focuses on <i>long-form video understanding</i>, <i>object-centric learning</i>, and <i>motion segmentation</i>. I am also interested in representation learning, image and video generation, and multimodal language model.</p>
+            </td>
+          </tr>
+        </table>
 
         
 
@@ -312,31 +322,20 @@
 
         </tbody></table>
 
-<!-- 
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Services</heading>
-              <p><strong>Reviewer</strong></p>
-              <p>CVPR, ECCV, NeurIPS, ICLR, BMVC and conference workshops</p>
-            </td>
-          </tr>
-        </tbody></table> -->
 
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                This website template is originally designed by <a href="https://jonbarron.info/">Jon Barron</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-      </td>
-    </tr>
-  </tbody></table>
+        <table style="width:100%;border:0;border-spacing:0;margin:auto;">
+            <tr>
+                <td style="padding:0">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                    This website template is originally designed by <a href="https://jonbarron.info/">Jon Barron</a>.
+                </p>
+                </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+    </table>
 </body>
-
 </html>
+
