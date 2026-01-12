@@ -52,8 +52,9 @@
               <p style="text-align:center; margin-bottom: 20px;">
                 <name>Junyu Xie</name>
               </p>
-              <p>I am currently a fourth-year DPhil student at <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group (VGG)</a>, <a href="https://www.ox.ac.uk/">University of Oxford</a>, advised by <a href="https://www.robots.ox.ac.uk/~az/">Prof. Andrew Zisserman</a> and <a href="https://weidixie.github.io/">Prof. Weidi Xie</a>.</p>
-              <p>Prior to that, I completed my undergraduate studies at <a href="https://www.cam.ac.uk/">University of Cambridge</a> and received MSc and BA degrees in Natural Sciences (Physics), during which I did summer interns on machine learning and physics at <a href="https://photonics.caltech.edu/">Caltech</a>, <a href="https://phys.fudan.edu.cn/">Fudan University</a>, and <a href="https://www.me.phy.cam.ac.uk/">University of Cambridge</a>.</p>
+              <p>I am currently a final-year DPhil (PhD) student at <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group (VGG)</a>, <a href="https://www.ox.ac.uk/">University of Oxford</a>, advised by <a href="https://www.robots.ox.ac.uk/~az/">Prof. Andrew Zisserman</a> and <a href="https://weidixie.github.io/">Prof. Weidi Xie</a>.</p>
+              <p> During Summer 2025, I interned at Google DeepMind, London as a student researcher, working on dense video perception and 4D reconstruction.</p>
+              <p>Prior to that, I completed my undergraduate studies at <a href="https://www.cam.ac.uk/">University of Cambridge</a> and received MSc and BA degrees in Natural Sciences (Physics), during which I did summer interns on machine learning and physics at Caltech, Fudan University, and University of Cambridge.</p>
               <p style="text-align:center">
                 <a href="mailto:jyx@robots.ox.ac.uk">Email</a> &nbsp;/&nbsp;
                 <a href="https://scholar.google.com/citations?user=cDMqaTYAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
@@ -72,7 +73,7 @@
           <tr>
             <td style="padding:20px;vertical-align:middle">
               <heading>Research</heading>
-              <p>My research focuses on <i>long-form video understanding</i>, <i>object-centric learning</i>, and <i>motion segmentation</i>. I am also interested in representation learning, image and video generation, and multimodal language model.</p>
+              <p>My research focuses on understanding motion and interactions in video, including <i>multi-modal video understanding</i>, <i>dense motion understanding</i>, and <i>object-centric learning</i>.</p>
             </td>
           </tr>
         </table>
@@ -82,6 +83,52 @@
         <table style="width:100%;border:0px;border-spacing:0px;table-layout:fixed;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
             <tr>
                 <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+                  <img src="resources/thumbnail_d4rt.PNG" alt="b3do" width="200" height="150" style="border-style: none">
+                </td>
+                <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2512.08924">
+                    <papertitle>Efficiently Reconstructing Dynamic Scenes One 🎯 D4RT at a Time</papertitle>
+                  </a>
+                  <br>
+                  Chuhan Zhang, 
+                  Guillaume Le Moing, 
+                  Skanda Koppula, 
+                  Ignacio Rocco, 
+                  Liliane Momeni,
+                  <strong> Junyu Xie</strong>,
+                  Shuyang Sun, 
+                  Rahul Sukthankar, 
+                  Jo&euml;lle K. Barral, 
+                  Raia Hadsell,
+                  Zoubin Ghahramani,
+                  Andrew Zisserman,
+                  Junlin Zhang,
+                  Mehdi S. M. Sajjadi
+                  <br>
+                  <em>ArXiv, 2025</em>
+                  <br>
+                  <a href='https://arxiv.org/abs/2512.08924'>ArXiv</a> /
+                  <a href="javascript:;" onclick="show_hide('BibChang25')"> Bibtex </a> /
+                  <a href="https://d4rt-paper.github.io/"> Project page</a> 
+      
+                  <div style="display: none;" class="BibtexExpand" id="BibChang25">
+                  <div style="width:500px;overflow:visible;">
+                  <pre class="bibtex" style="font-size:12px">
+@article{zhang2025d4rt,
+  title={Efficiently Reconstructing Dynamic Scenes One D4RT at a Time},
+  author={Zhang, Chuhan and Le Moing, Guillaume and Koppula, Skanda and Rocco, Ignacio and Momeni, Liliane and Xie, Junyu and Sun, Shuyang and Sukthankar, Rahul and Barral, Jo{\"e}lle K. and Hadsell, Raia and Ghahramani, Zoubin and Zisserman, Andrew and Zhang, Junlin and Sajjadi, Mehdi S. M.},
+  journal={arXiv preprint},
+  year={2025}
+}
+                  </pre>
+                  </div>
+                  </div>
+                  <p style="margin-top: 5px;">D4RT is a feedforward model that utilizes a unified transformer architecture and a novel querying mechanism to jointly infer depth, spatio-temporal correspondence, and camera parameters from a single video, achieving state-of-the-art performance in 4D reconstruction tasks.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
                   <img src="resources/thumbnail_shot-by-shot.png" alt="b3do" width="200" height="150" style="border-style: none">
                 </td>
                 <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
@@ -89,18 +136,10 @@
                     <papertitle>Shot-by-Shot: Film-Grammar-Aware Training-Free Audio Description Generation</papertitle>
                   </a>
                   <br>
-                  <strong> Junyu Xie </strong>,
-                  <a href='https://tengdahan.github.io/'> Tengda Han</a>,
-                  <a href='https://maxbain.com/'> Max Bain</a>,
-                  <a href='https://a-nagrani.github.io/'> Arsha Nagrani</a>,
-                  <a href='https://esh04.github.io/'> Eshika Khandelwal</a>,
-                  <!-- <br> -->
-                  <a href='https://imagine.enpc.fr/~varolg/'> G&uuml;l Varol</a>,
-                  <a href="https://weidixie.github.io/"> Weidi Xie</a>,
-                  <a href="https://www.robots.ox.ac.uk/~az/"> Andrew Zisserman</a>
-      
+                  <strong> Junyu Xie</strong>,
+                  Tengda Han, Max Bain, Arsha Nagrani, Eshika Khandelwal, G&uuml;l Varol, Weidi Xie, Andrew Zisserman
                   <br>
-                  <em>In ICCV, 2025</em> &nbsp <font color="red"><b>(new)</b></font></font>
+                  <em>In ICCV, 2025</em>
                   <br>
                   <a href='https://arxiv.org/abs/2504.01020'>ArXiv</a> /
                   <a href="javascript:;" onclick="show_hide('BibXie25')"> Bibtex </a> /
@@ -123,7 +162,45 @@
                   <p style="margin-top: 5px;">In this work, we introduce an enhanced two-stage training-free framework for Audio Description (AD) generation. We consider "shot" as the fundamental unit in movie and TV series, incorporating shot-based temporal context and film grammar information into VideoLLM perception. Additionally, we formulate a new metric (Action Score) that assesses whether the predicted ADs captures the correct action information.</p>
                 </td>
             </tr>
-
+        
+        <tr>
+                <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+                  <img src="resources/thumbnail_aniad.png" alt="b3do" width="200" height="150" style="border-style: none">
+                </td>
+                <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2509.12204">
+                    <papertitle>Character-Centric Understanding of Animated Movies</papertitle>
+                  </a>
+                  <br>
+                  Zhongrui Gui,
+                  <strong> Junyu Xie</strong>,
+                  Tengda Han, Weidi Xie, Andrew Zisserman
+      
+                  <br>
+                  <em>In ACMMM, 2025</em>
+                  <br>
+                  <a href='https://arxiv.org/abs/2509.12204'>ArXiv</a> /
+                  <a href="javascript:;" onclick="show_hide('BibGui25')"> Bibtex </a> /
+                  <a href="https://www.robots.ox.ac.uk/~vgg/research/animated_ad/"> Project page</a>  /
+                  <a href='https://github.com/zhrgui/Animated_AD'>Code</a> 
+                  
+                  <div style="display: none;" class="BibtexExpand" id="BibGui25">
+                  <div style="width:500px;overflow:visible;">
+                  <pre class="bibtex" style="font-size:12px">
+@InProceedings{gui2025character,
+  title={Character-Centric Understanding of Animated Movies},
+  author={Zhongrui Gui and Junyu Xie and Tengda Han and Weidi Xie and Andrew Zisserman},
+  booktitle={ACMMM},
+  year={2025}
+}
+      
+                  </pre>
+                  </div>
+                  </div>
+                  <p style="margin-top: 5px;">To address the challenge of recognising highly variable animated characters, this work introduces a novel audio-visual pipeline and the CMD-AM dataset, utilising a multi-modal character bank to significantly improve accessibility through generated audio descriptions and character-aware subtitles.</p>
+                </td>
+            </tr>
+            
         <tr>
           <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
             <img src="resources/thumbnail_autoad0.png" alt="b3do" width="200" height="150" style="border-style: none">
@@ -133,16 +210,10 @@
               <papertitle>AutoAD-Zero: A Training-Free Framework for Zero-Shot Audio Description</papertitle>
             </a>
             <br>
-            <strong> Junyu Xie </strong>,
-            <a href='https://tengdahan.github.io/'> Tengda Han</a>,
-            <a href='https://maxbain.com/'> Max Bain</a>,
-            <a href='https://a-nagrani.github.io/'> Arsha Nagrani</a>,
-            <a href='https://imagine.enpc.fr/~varolg/'> G&uuml;l Varol</a>,
-            <a href="https://weidixie.github.io/"> Weidi Xie</a>,
-            <a href="https://www.robots.ox.ac.uk/~az/"> Andrew Zisserman</a>
-
+            <strong> Junyu Xie</strong>,
+            Tengda Han, Max Bain, Arsha Nagrani, G&uuml;l Varol, Weidi Xie, Andrew Zisserman
             <br>
-            <em>In ACCV, 2024</em> &nbsp <font color="red"></font></font>
+            <em>In ACCV, 2024</em> &nbsp <font color="red"></font>
             <br>
             <a href='https://arxiv.org/abs/2407.15850'>ArXiv</a> /
             <a href="javascript:;" onclick="show_hide('BibXie24b')"> Bibtex </a> /
@@ -175,13 +246,10 @@
               <papertitle>Moving Object Segmentation: All You Need Is SAM (and Flow)</papertitle>
             </a>
             <br>
-            <strong> Junyu Xie </strong>,
-            <a href='https://charigyang.github.io/'> Charig Yang</a>,
-            <a href="https://weidixie.github.io/"> Weidi Xie</a>,
-            <a href="https://www.robots.ox.ac.uk/~az/"> Andrew Zisserman</a>
-
+            <strong> Junyu Xie</strong>,
+            Charig Yang, Weidi Xie, Andrew Zisserman
             <br>
-            <em>In ACCV, 2024</em> &nbsp <font color="red"> <b>(Oral)</b> </font>
+            <em>In ACCV (Oral), 2024</em> &nbsp 
             <br>
             <a href='https://arxiv.org/abs/2404.12389'>ArXiv</a> /
             <a href="javascript:;" onclick="show_hide('BibXie24a')"> Bibtex </a> /
@@ -215,10 +283,8 @@
             <papertitle>Appearance-Based Refinement for Object-Centric Motion Segmentation</papertitle>
           </a>
           <br>
-          <strong> Junyu Xie </strong>,
-          <a href="https://weidixie.github.io/"> Weidi Xie</a>,
-          <a href="https://www.robots.ox.ac.uk/~az/"> Andrew Zisserman</a>
-
+          <strong> Junyu Xie</strong>,
+          Weidi Xie, Andrew Zisserman
           <br>
           <em>In ECCV, 2024</em> &nbsp <font color="red"></font>
           <br>
@@ -245,18 +311,16 @@
 
       <tr>
             <td style="padding:20px;width:25%;vertical-align:middle">
-              <img src="resources/thumbenail_shapeditor.PNG" alt="b3do" width="200" height="150" style="border-style: none">
+              <img src="resources/thumbnail_shapeditor.PNG" alt="b3do" width="200" height="150" style="border-style: none">
             </td>
             <td style="padding:15px 30px;width:75%;vertical-align:middle">
               <a href="https://arxiv.org/abs/2312.09246">
                 <papertitle>SHAP-EDITOR: Instruction-guided Latent 3D Editing in Seconds</papertitle>
               </a>
               <br>
-              <a href="https://silent-chen.github.io/"> Minghao Chen</a>,
+              Minghao Chen,
               <strong> Junyu Xie</strong>,
-              <a href="https://scholar.google.de/citations?user=n9nXAPcAAAAJ&hl=en"> Iro Laina</a>,
-              <a href="https://www.robots.ox.ac.uk/~vedaldi/"> Andrea Vedaldi</a>
-
+              Iro Laina, Andrea Vedaldi
               <br>
               <em>In CVPR </em>, 2024 &nbsp <font color="red"></font>
               <br>
@@ -291,9 +355,8 @@
                 <papertitle>Segmenting Moving Objects via an Object-Centric Layered Representation</papertitle>
               </a>
               <br>
-              <strong> Junyu Xie </strong>,
-              <a href="https://weidixie.github.io/"> Weidi Xie</a>,
-              <a href="https://www.robots.ox.ac.uk/~az/"> Andrew Zisserman</a>
+              <strong> Junyu Xie</strong>,
+              Weidi Xie, Andrew Zisserman
     
               <br>
               <em>In NeurIPS, 2022</em> &nbsp <font color="red"></font>
