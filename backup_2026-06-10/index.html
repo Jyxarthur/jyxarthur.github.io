@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Junyu Xie</title>
+  <meta name="author" content="Junyu Xie">
+  <link rel="stylesheet" href="stylesheet.css">
+  <link rel="icon" href="images/icon_small.png" type="image/png">
+
+  <style>
+    @media (max-width: 768px) {
+      td {
+        display: block !important;
+        width: 100% !important;
+        box-sizing: border-box;
+      }
+      img {
+        width: 100% !important;
+        height: auto !important;
+      }
+      .bibtex {
+        white-space: pre-wrap;
+        word-wrap: break-word;
+      }
+    }
+    name {
+      font-size: 2em;
+      font-weight: bold;
+    }
+    heading {
+      font-size: 1.5em;
+      font-weight: bold;
+    }
+  </style>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script>
+    function show_hide(eid) {
+      const x = document.getElementById(eid);
+      x.style.display = (x.style.display === "none" || x.style.display === "") ? "block" : "none";
+    }
+  </script>
+</head>
+
+<body>
+  <table style="width:100%;max-width:800px;margin:auto;border:0;border-spacing:0;border-collapse:separate;">
+    <tr>
+      <td>
+        <table style="width:100%;border:0;border-spacing:0;margin:auto;">
+          <tr>
+            <td style="padding:2.5%;width:70%;vertical-align:middle">
+              <p style="text-align:center; margin-bottom: 20px;">
+                <name>Junyu Xie</name>
+              </p>
+              <p>I am currently a final-year DPhil (PhD) student at <a href="https://www.robots.ox.ac.uk/~vgg/">Visual Geometry Group (VGG)</a>, <a href="https://www.ox.ac.uk/">University of Oxford</a>, advised by <a href="https://www.robots.ox.ac.uk/~az/">Prof. Andrew Zisserman</a> and <a href="https://weidixie.github.io/">Prof. Weidi Xie</a>.</p>
+              <p> During Summer 2025, I interned at Google DeepMind London as a student researcher, working on dense video perception and 4D reconstruction.</p>
+              <p>Prior to that, I completed my undergraduate studies at <a href="https://www.cam.ac.uk/">University of Cambridge</a> and received MSc and BA degrees in Natural Sciences (Physics), during which I did summer interns on machine learning and physics at Caltech, Fudan University, and University of Cambridge.</p>
+              <p style="text-align:center">
+                <a href="mailto:jyx@robots.ox.ac.uk">Email</a> &nbsp;/&nbsp;
+                <a href="https://scholar.google.com/citations?user=cDMqaTYAAAAJ&hl=en">Google Scholar</a> &nbsp;/&nbsp;
+                <a href="https://github.com/jyxarthur">Github</a>
+              </p>
+            </td>
+            <td style="padding:3%;width:30%;max-width:40%;vertical-align:middle;text-align:center">
+              <a href="resources/profile_image.jpg">
+                <img src="resources/profile_image.jpg" alt="profile photo" style="max-width:100%;height:auto;">
+              </a>
+            </td>
+          </tr>
+        </table>
+
+        <table style="width:100%;margin:auto;border:0;border-spacing:0;">
+          <tr>
+            <td style="padding:20px;vertical-align:middle">
+              <heading>Research</heading>
+              <p>My research focuses on understanding motion and interactions in video, including <i>multi-modal video understanding</i>, <i>dense motion understanding</i>, and <i>object-centric learning</i>.</p>
+            </td>
+          </tr>
+        </table>
+
+        
+
+        <table style="width:100%;border:0px;border-spacing:0px;table-layout:fixed;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+            <tr>
+                <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+                  <img src="resources/thumbnail_gmos.PNG" alt="gmos" width="200" height="150" style="border-style: none">
+                </td>
+                <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2605.30352"> 
+                    <papertitle>Grounding Moving Object Segmentation in 3D Space and Time</papertitle> 
+                  </a>
+                  <br>
+                  <strong>Junyu Xie</strong>,
+                  Tengda Han,
+                  Weidi Xie,
+                  Andrew Zisserman
+                  <br>
+                  <em>arXiv preprint, 2026</em>
+                  <br>
+                  <a href='https://arxiv.org/abs/2605.30352'>ArXiv</a> / 
+                  <a href="javascript:;" onclick="show_hide('BibXie26gmos')"> Bibtex </a> /
+                  <a href="https://www.robots.ox.ac.uk/~vgg/research/gmos/"> Project page</a>
+                  <div style="display: none;" class="BibtexExpand" id="BibXie26gmos">
+                  <div style="width:500px;overflow:visible;">
+                  <pre class="bibtex" style="font-size:12px">
+@article{xie2026gmos,
+  title={Grounding Moving Object Segmentation in 3D Space and Time},
+  author={Xie, Junyu and Han, Tengda and Xie, Weidi and Zisserman, Andrew},
+  journal={arXiv preprint arXiv:2605.30352},
+  year={2026}
+}
+                  </pre>
+                  </div>
+                  </div>
+                  <p style="margin-top: 5px;">We present GMOS, a framework that grounds moving object segmentation in 3D space and time, predicting moving objects per-frame from RGB video and achieving state-of-the-art results. The approach is supported by our new GMOS-2K dataset, comprising 2,210 real-world videos with per-object temporal motion annotations, and the temporally fine-grained MOS-I evaluation protocol.</p>
+                </td>
+            </tr>
+
+            
+            <tr>
+                <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+                  <img src="resources/thumbnail_d4rt.PNG" alt="b3do" width="200" height="150" style="border-style: none">
+                </td>
+                <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2512.08924">
+                    <papertitle>Efficiently Reconstructing Dynamic Scenes One 🎯 D4RT at a Time</papertitle>
+                  </a>
+                  <br>
+                  Chuhan Zhang, 
+                  Guillaume Le Moing, 
+                  Skanda Koppula, 
+                  Ignacio Rocco, 
+                  Liliane Momeni,
+                  <strong> Junyu Xie</strong>,
+                  Shuyang Sun, 
+                  Rahul Sukthankar, 
+                  Jo&euml;lle K. Barral, 
+                  Raia Hadsell,
+                  Zoubin Ghahramani,
+                  Andrew Zisserman,
+                  Junlin Zhang,
+                  Mehdi S. M. Sajjadi
+                  <br>
+                  <em>In CVPR, 2026</em> &nbsp <font color="red"><strong>Best Paper Award</strong></font>🏆
+                  <br>
+                  <a href='https://arxiv.org/abs/2512.08924'>ArXiv</a> /
+                  <a href="javascript:;" onclick="show_hide('BibChang25')"> Bibtex </a> /
+                  <a href="https://d4rt-paper.github.io/"> Project page</a> 
+      
+                  <div style="display: none;" class="BibtexExpand" id="BibChang25">
+                  <div style="width:500px;overflow:visible;">
+                  <pre class="bibtex" style="font-size:12px">
+@InProceedings{zhang2026d4rt,
+  title={Efficiently Reconstructing Dynamic Scenes One D4RT at a Time},
+  author={Zhang, Chuhan and Le Moing, Guillaume and Koppula, Skanda and Rocco, Ignacio and Momeni, Liliane and Xie, Junyu and Sun, Shuyang and Sukthankar, Rahul and Barral, Jo{\"e}lle K. and Hadsell, Raia and Ghahramani, Zoubin and Zisserman, Andrew and Zhang, Junlin and Sajjadi, Mehdi S. M.},
+  booktitle={CVPR},
+  year={2026}
+}
+                  </pre>
+                  </div>
+                  </div>
+                  <p style="margin-top: 5px;">D4RT is a feedforward model that utilizes a unified transformer architecture and a novel querying mechanism to jointly infer depth, spatio-temporal correspondence, and camera parameters from a single video, achieving state-of-the-art performance in 4D reconstruction and tracking tasks.</p>
+                </td>
+            </tr>
+
+            <tr>
+                <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+                  <img src="resources/thumbnail_shot-by-shot.png" alt="b3do" width="200" height="150" style="border-style: none">
+                </td>
+                <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2504.01020">
+                    <papertitle>Shot-by-Shot: Film-Grammar-Aware Training-Free Audio Description Generation</papertitle>
+                  </a>
+                  <br>
+                  <strong> Junyu Xie</strong>,
+                  Tengda Han, Max Bain, Arsha Nagrani, Eshika Khandelwal, G&uuml;l Varol, Weidi Xie, Andrew Zisserman
+                  <br>
+                  <em>In ICCV, 2025</em>
+                  <br>
+                  <a href='https://arxiv.org/abs/2504.01020'>ArXiv</a> /
+                  <a href="javascript:;" onclick="show_hide('BibXie25')"> Bibtex </a> /
+                  <a href="https://www.robots.ox.ac.uk/~vgg/research/shot-by-shot/"> Project page</a>  /
+                  <a href='https://github.com/Jyxarthur/shot-by-shot/'>Code</a> /
+                  <a href='https://www.robots.ox.ac.uk/~vgg/research/shot-by-shot/#action_score'>Metric (Action Score)</a>
+      
+                  <div style="display: none;" class="BibtexExpand" id="BibXie25">
+                  <div style="width:500px;overflow:visible;">
+                  <pre class="bibtex" style="font-size:12px">
+@InProceedings{xie2025shotbyshot,
+  title={Shot-by-Shot: Film-Grammar-Aware Training-Free Audio Description Generation},
+  author={Junyu Xie and Tengda Han and Max Bain and Arsha Nagrani and Eshika Khandelwal and G\"ul Varol and Weidi Xie and Andrew Zisserman},
+  booktitle={ICCV},
+  year={2025}
+}
+                  </pre>
+                  </div>
+                  </div>
+                  <p style="margin-top: 5px;">In this work, we introduce an enhanced two-stage training-free framework for Audio Description (AD) generation. We consider "shot" as the fundamental unit in movie and TV series, incorporating shot-based temporal context and film grammar information into VideoLLM perception. Additionally, we formulate a new metric (Action Score) that assesses whether the predicted ADs captures the correct action information.</p>
+                </td>
+            </tr>
+        
+        <tr>
+                <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+                  <img src="resources/thumbnail_aniad.png" alt="b3do" width="200" height="150" style="border-style: none">
+                </td>
+                <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
+                  <a href="https://arxiv.org/abs/2509.12204">
+                    <papertitle>Character-Centric Understanding of Animated Movies</papertitle>
+                  </a>
+                  <br>
+                  Zhongrui Gui,
+                  <strong> Junyu Xie</strong>,
+                  Tengda Han, Weidi Xie, Andrew Zisserman
+      
+                  <br>
+                  <em>In ACMMM, 2025</em>
+                  <br>
+                  <a href='https://arxiv.org/abs/2509.12204'>ArXiv</a> /
+                  <a href="javascript:;" onclick="show_hide('BibGui25')"> Bibtex </a> /
+                  <a href="https://www.robots.ox.ac.uk/~vgg/research/animated_ad/"> Project page</a>  /
+                  <a href='https://github.com/zhrgui/Animated_AD'>Code</a> 
+                  
+                  <div style="display: none;" class="BibtexExpand" id="BibGui25">
+                  <div style="width:500px;overflow:visible;">
+                  <pre class="bibtex" style="font-size:12px">
+@InProceedings{gui2025character,
+  title={Character-Centric Understanding of Animated Movies},
+  author={Zhongrui Gui and Junyu Xie and Tengda Han and Weidi Xie and Andrew Zisserman},
+  booktitle={ACMMM},
+  year={2025}
+}
+      
+                  </pre>
+                  </div>
+                  </div>
+                  <p style="margin-top: 5px;">To address the challenge of recognising highly variable animated characters, this work introduces a novel audio-visual pipeline and the CMD-AM dataset, utilising a multi-modal character bank to significantly improve accessibility through generated audio descriptions and character-aware subtitles.</p>
+                </td>
+            </tr>
+            
+        <tr>
+          <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+            <img src="resources/thumbnail_autoad0.png" alt="b3do" width="200" height="150" style="border-style: none">
+          </td>
+          <td style="padding:10px 0px 15px 30px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2404.18929">
+              <papertitle>AutoAD-Zero: A Training-Free Framework for Zero-Shot Audio Description</papertitle>
+            </a>
+            <br>
+            <strong> Junyu Xie</strong>,
+            Tengda Han, Max Bain, Arsha Nagrani, G&uuml;l Varol, Weidi Xie, Andrew Zisserman
+            <br>
+            <em>In ACCV, 2024</em>
+            <br>
+            <a href='https://arxiv.org/abs/2407.15850'>ArXiv</a> /
+            <a href="javascript:;" onclick="show_hide('BibXie24b')"> Bibtex </a> /
+            <a href="https://www.robots.ox.ac.uk/~vgg/research/autoad-zero/"> Project page</a>  /
+            <a href='https://github.com/Jyxarthur/AutoAD-Zero'>Code</a> /
+            <a href='https://www.robots.ox.ac.uk/~vgg/research/autoad-zero/#tvad'>Dataset (TV-AD)</a>
+
+            <div style="display: none;" class="BibtexExpand" id="BibXie24b">
+            <div style="width:500px;overflow:visible;">
+            <pre class="bibtex" style="font-size:12px">
+@InProceedings{xie2024autoad0,
+  title={AutoAD-Zero: A Training-Free Framework for Zero-Shot Audio Description},
+  author={Junyu Xie and Tengda Han and Max Bain and Arsha Nagrani and G\"ul Varol and Weidi Xie and Andrew Zisserman},
+  booktitle={ACCV},
+  year={2024}
+}
+            </pre>
+            </div>
+            </div>
+            <p style="margin-top: 5px;">In this paper, we propose AutoAD-Zero, which is a training-free framework aiming at zero-shot Audio Description (AD) generation for movies and TV series. The overall framework feature two stages (dense description + AD summary), with the character information injected by visual-textual prompting.</p>
+          </td>
+      </tr>
+
+        <tr>
+          <td style="padding:20px;width:25%;vertical-align:middle">
+            <img src="resources/thumbnail_flowsam.png" alt="b3do" width="200" height="150" style="border-style: none">
+          </td>
+          <td style="padding:15px 30px;width:75%;vertical-align:middle">
+            <a href="https://arxiv.org/abs/2404.12389">
+              <papertitle>Moving Object Segmentation: All You Need Is SAM (and Flow)</papertitle>
+            </a>
+            <br>
+            <strong> Junyu Xie</strong>,
+            Charig Yang, Weidi Xie, Andrew Zisserman
+            <br>
+            <em>In ACCV, 2024</em> &nbsp  <font color="red"><strong>Oral</strong></font>
+            <br>
+            <a href='https://arxiv.org/abs/2404.12389'>ArXiv</a> /
+            <a href="javascript:;" onclick="show_hide('BibXie24a')"> Bibtex </a> /
+            <a href="https://www.robots.ox.ac.uk/~vgg/research/flowsam/"> Project page</a>  /
+            <a href='https://github.com/Jyxarthur/flowsam/'>Code</a>
+            
+            <div style="display: none;" class="BibtexExpand" id="BibXie24a">
+            <div style="width:500px;overflow:visible;">
+            <pre class="bibtex" style="font-size:12px">
+@InProceedings{xie2024flowsam,
+  title={Moving Object Segmentation: All You Need Is SAM (and Flow)},
+  author={Junyu Xie and Charig Yang and Weidi Xie and Andrew Zisserman},
+  booktitle={ACCV},
+  year={2024}
+}
+            </pre>
+            </div>
+            </div>
+
+            <p style="margin-top: 5px;">This paper focuses on motion segmentation by incorporating optical flow into the Segment Anything model (SAM), applying flow information as direct inputs (FlowISAM) or prompts (FlowPSAM).</p>
+         
+          </td>
+      </tr>
+
+      <tr>
+        <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+          <img src="resources/thumbnail_abr.png" alt="b3do" width="200" height="150" style="border-style: none">
+        </td>
+        <td style="padding:15px 30px;width:75%;vertical-align:middle">
+          <a href="https://arxiv.org/abs/2312.11463">
+            <papertitle>Appearance-Based Refinement for Object-Centric Motion Segmentation</papertitle>
+          </a>
+          <br>
+          <strong> Junyu Xie</strong>,
+          Weidi Xie, Andrew Zisserman
+          <br>
+          <em>In ECCV, 2024</em> &nbsp <font color="red"></font>
+          <br>
+          <a href='https://arxiv.org/abs/2312.11463'>ArXiv</a> /
+          <a href="javascript:;" onclick="show_hide('BibXie24')"> Bibtex </a> / 
+          <a href="https://www.robots.ox.ac.uk/~vgg/research/appear-refine/"> Project page</a>  
+          <!-- <a href=''>Code</a> -->
+          <div style="display: none;" class="BibtexExpand" id="BibXie24">
+            <div style="width:500px;overflow:visible;">
+            <pre class="bibtex" style="font-size:12px">
+@InProceedings{xie2024appearrefine,
+  title={Appearance-Based Refinement for Object-Centric Motion Segmentation},
+  author={Junyu Xie and Weidi Xie and Andrew Zisserman},
+  booktitle={ECCV},
+  year={2024}
+}
+            </pre>
+            </div>
+            </div>
+            <p style="margin-top: 5px;">This paper aims at improving flow-only motion segmentation (e.g. OCLR predictions) by leveraging appearance information across video frames. A selection-correction pipeline is developed, along with a test-time model adaptation scheme that further alleviates the Sim2Real disparity.</p>
+        </td>
+    </tr>
+
+
+      <tr>
+            <td style="padding:20px;width:25%;vertical-align:middle">
+              <img src="resources/thumbnail_shapeditor.PNG" alt="b3do" width="200" height="150" style="border-style: none">
+            </td>
+            <td style="padding:15px 30px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2312.09246">
+                <papertitle>SHAP-EDITOR: Instruction-guided Latent 3D Editing in Seconds</papertitle>
+              </a>
+              <br>
+              Minghao Chen,
+              <strong> Junyu Xie</strong>,
+              Iro Laina, Andrea Vedaldi
+              <br>
+              <em>In CVPR </em>, 2024 &nbsp <font color="red"></font>
+              <br>
+              <a href="https://arxiv.org/abs/2312.09246">ArXiv</a> /
+              <a href="javascript:;" onclick="show_hide('BibChen24')"> Bibtex </a> /
+              <a href="https://silent-chen.github.io/Shap-Editor/">Project page</a> /
+              <a href="https://github.com/silent-chen/Shap-Editor">Code</a> /
+              <a href="https://huggingface.co/spaces/silentchen/Shap_Editor_demo">Demo</a>
+              <div style="display: none;" class="BibtexExpand" id="BibChen24">
+                <div style="width:500px;overflow:visible;">
+                <pre class="bibtex" style="font-size:12px">
+@InProceedings{chen2024shap,
+  title={SHAP-EDITOR: Instruction-guided Latent 3D Editing in Seconds},
+  author={Chen, Minghao and Xie, Junyu and Laina, Iro and Vedaldi, Andrea},
+  booktitle=CVPR,
+  year={2024}
+}
+                </pre>
+                </div>
+                </div>
+              <p style="margin-top: 5px;">This paper present a method, named SHAP-EDITOR, aiming at fast 3D editing (within one second). To acheve this, we propose to learn a universal editing function that can be applied to different objects in a feed-forward manner.</p>
+            </td>
+          </tr>
+
+
+          <tr>
+            <td style="padding: 8px 20px 20px 20px;width:25%;vertical-align:middle">
+              <img src="resources/thumbnail_oclr.png" alt="b3do" width="200" height="150" style="border-style: none">
+            </td>
+            <td style="padding:15px 30px;width:75%;vertical-align:middle">
+              <a href="https://arxiv.org/abs/2207.02206">
+                <papertitle>Segmenting Moving Objects via an Object-Centric Layered Representation</papertitle>
+              </a>
+              <br>
+              <strong> Junyu Xie</strong>,
+              Weidi Xie, Andrew Zisserman
+    
+              <br>
+              <em>In NeurIPS, 2022</em> &nbsp <font color="red"></font>
+              <br>
+              <a href='https://arxiv.org/abs/2207.02206'>ArXiv</a> /
+              <a href="javascript:;" onclick="show_hide('BibXie22')"> Bibtex </a> /
+              <a href="https://www.robots.ox.ac.uk/~vgg/research/oclr/"> Project page</a>  /
+              <a href='https://github.com/Jyxarthur/OCLR_model'>Code</a>
+              <div style="display: none;" class="BibtexExpand" id="BibXie22">
+                <div style="width:500px;overflow:visible;">
+                <pre class="bibtex" style="font-size:12px">
+@InProceedings{xie2022segmenting,
+  title     = {Segmenting Moving Objects via an Object-Centric Layered Representation}, 
+  author    = {Junyu Xie and Weidi Xie and Andrew Zisserman},
+  booktitle = {NeurIPS},
+  year      = {2022}
+}
+                </pre>
+                </div>
+                </div>
+              <p style="margin-top: 5px;">In this paper, we propose the OCLR model for discovering, tracking and segmenting multiple moving objects in a video <i>without relying on human annotations</i>. This object-centric segmentation model utilises depth-ordered layered representations and is trained following a Sim2Real procedure.</p>
+            </td>
+        </tr>
+    
+    
+
+        </tbody></table>
+
+
+        <table style="width:100%;border:0;border-spacing:0;margin:auto;">
+            <tr>
+                <td style="padding:0">
+                <br>
+                <p style="text-align:right;font-size:small;">
+                    This website template is originally designed by <a href="https://jonbarron.info/">Jon Barron</a>.
+                </p>
+                </td>
+            </tr>
+            </table>
+        </td>
+        </tr>
+    </table>
+
+    <!-- Cloudflare Web Analytics -->
+    <script defer src='https://static.cloudflareinsights.com/beacon.min.js' data-cf-beacon='{"token": "b4670c4b05274011a7652578c6447bd4"}'></script>
+    <!-- End Cloudflare Web Analytics -->
+</body>
+</html>
+
